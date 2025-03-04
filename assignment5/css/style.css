@@ -1,0 +1,182 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+background: black;
+	
+}
+
+
+#container {
+	
+}
+
+div#toodles {
+width: 0;
+height: 0;
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+border-top: 50px solid #fcf98d;
+position: absolute;
+top: 200px;
+left: 200px;
+transition: all 2s
+}
+
+
+div#toodles:hover{
+border-top: 50px solid #64bf56;
+transform: rotate(180deg) scale(3);
+
+
+}
+
+
+div#milo{
+background: green;
+width: 400px;
+height: 300px;
+border-radius: 50%;
+position: absolute;
+bottom: 50px;
+right: 50px;
+/*transition: background 500ms, height 1s;*/
+transition: all 2s;
+
+}
+
+
+div#milo:hover {
+background: #f1f5a9;
+height: 400px;
+bottom: 50px; 
+right: 70px;
+border: 2px solid black;
+
+}
+
+
+div#star1 {
+	color: white; 
+	font-size: 20px;    
+	display: inline-block;
+	transition: transform 0.3s ease-in-out;
+	position: absolute;
+	top: 200px;
+	left: 500px;
+
+}
+
+div#star1:hover {
+    transform: scale(2);
+
+}
+
+
+div#star2 {
+	color: #f6f7cb; 
+	font-size: 70px;    
+	display: inline-block;
+	transition: transform 0.3s ease-in-out;
+	position: absolute;
+	top: 300px;
+	left: 100px;
+	transition: 1.5s
+}
+
+div#star2:hover {
+    transform: scale(1.2);
+bottom: 500px; 
+right: 100px;
+}
+
+
+div#moon{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 white;
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	transition: 2s
+    }
+  
+
+div#moon:hover {
+    transform: rotate(-45deg);
+
+}
+
+ #spaceinvader {
+      box-shadow: 0 0 0 1em #64bf56,
+      0 1em 0 1em #64bf56,
+      -2.5em 1.5em 0 .5em #64bf56,
+      2.5em 1.5em 0 .5em #64bf56,
+      -3em -3em 0 0 #64bf56,
+      3em -3em 0 0 #64bf56,
+      -2em -2em 0 0 #64bf56,
+      2em -2em 0 0 #64bf56,
+      -3em -1em 0 0 #64bf56,
+      -2em -1em 0 0 #64bf56,
+      2em -1em 0 0 #64bf56,
+      3em -1em 0 0 #64bf56,
+      -4em 0 0 0 #64bf56,
+      -3em 0 0 0 #64bf56,
+      3em 0 0 0 #64bf56,
+      4em 0 0 0 #64bf56,
+      -5em 1em 0 0 #64bf56,
+      -4em 1em 0 0 #64bf56,
+      4em 1em 0 0 #64bf56,
+      5em 1em 0 0 #64bf56,
+      -5em 2em 0 0 #64bf56,
+      5em 2em 0 0 #64bf56,
+      -5em 3em 0 0 #64bf56,
+      -3em 3em 0 0 #64bf56,
+      3em 3em 0 0 #64bf56,
+      5em 3em 0 0 #64bf56,
+      -2em 4em 0 0 #64bf56,
+      -1em 4em 0 0 #64bf56,
+      1em 4em 0 0 #64bf56,
+      2em 4em 0 0 #64bf56;
+      background: #64bf56;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      margin: 50px 0 70px 65px;
+	transition: all 2s;
+	position: absolute;
+	bottom: 50px;
+	left: 100px;
+	 animation: moveInvader 3s linear infinite;
+}
+
+@keyframes moveInvader {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100px; 
+    }
+    100% {
+        left: 0; 
+    }
+
+
+
+
+
+
