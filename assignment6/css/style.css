@@ -1,0 +1,144 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background: #420039;
+	font-family: "Roboto Condensed", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+}
+
+
+#container {
+	
+}
+
+section{
+	background: #932F6D;
+	border: 1px solid black;
+	padding: 10px;
+	/*margin: 15px;*/
+	margin-bottom: 20px;
+	color: #F6F2FF;
+}
+
+section#second{
+	background: #E07BE0;
+	color: #420039;
+}
+
+header#maintitle{
+	text-align: center;
+	color: #DCCCFF;
+}
+
+footer{
+	color: #DCCCFF;
+}
+
+.mobile{
+	background: #932F6D;	
+}
+
+.desktop{
+	display: none;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+
+body{
+background: #420039;
+}
+	
+#container{
+width: 700px;
+margin: auto;
+}
+	
+	
+} /* closes 769px+ */
+
+
+
+
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+body{
+	background: #cbf2f2 url(../img/music.jpg) fixed no-repeat center;
+	background-size: cover;
+color: black;
+}
+
+#container{
+	width: 1000px;
+}	
+	
+section#first{
+	float: left;
+	width: 50%;
+	background: #58A4B0;
+	color: white;
+}
+
+section#second{
+	float: right;
+	width: 40%;
+	background: pink;
+}
+
+footer{
+	clear: both;
+	color: white;
+}
+
+.mobile{
+	display: none;
+}
+
+.desktop{
+	display: block;
+	background: pink;	
+
+}
+
+header#maintitle{
+	text-align: center;
+	color: white;
+}
+
+
+} /* closes 1024px+ */
+
+
+
