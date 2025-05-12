@@ -1,0 +1,290 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background-image: linear-gradient(to bottom, #0F6B69, #041C26);
+	color: white;
+	font-family: Calibri, Geneva;
+
+	
+}
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	flex-direction: column;
+	padding: 20px;
+	background-color: #1a1a1a;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.logo img {
+	width: 250px; 
+	height: auto;
+	margin-bottom: 10px;
+}
+
+
+
+
+#container {
+	background: none;
+	/*width: 800px;*/
+	width: 90%;
+	max-width: 800px;
+	margin: auto; 
+	padding: 10px;
+
+}
+
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+li {
+display: inline;
+}
+
+nav a {
+	color: white;
+	display: inline-block;
+	background: #296960; 
+	padding: 8px;
+	margin: 6px;
+	font-family: "Spectral SC", serif;
+	text-decoration: none;
+	border-radius: 5px;
+
+}
+
+nav a:hover {
+color: #296960;
+background: white;
+}
+
+img {
+	width: 100%;
+}
+
+figcaption, footer {
+	font-size: 0.75em;
+}
+
+button {
+color: white;
+border: 15px;
+font-family: "Spectral SC", serif;
+background: #296960;
+padding: 10px;
+cursor: pointer;
+margin-top: 40px;
+margin-bottom: 40px;
+
+
+}
+
+button:hover{
+color: #296960;
+background: white;
+}
+
+figure {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	font-family: "Spectral SC", serif;
+	font-weight: 500;
+	font-style: normal;
+	margin-top: 40px;
+}
+
+section {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+
+section p {
+	font-size: 16px;
+	font-family: "Fauna One", serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.quote {
+	font-size: 40px;
+	font-family: "Spectral SC", serif;
+	text-align: center;
+	margin: 20px 0;
+	font-weight: 600;
+	margin-bottom: 50px;
+	margin-top: 50px;
+
+}
+
+
+footer {
+	width: 100%;
+	background-color: #1a1a1a;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#join-nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#formcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#formcontainer p {
+  font-family: "Fauna One", serif; /* or any font you prefer */
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+
+main{
+	display: flex;
+
+}
+
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	gap: 40px;
+	flex-direction: row;
+	padding: 20px;
+}
+
+.logo img {
+	width: 150px;
+	margin-bottom: 0;
+}
+
+nav ul {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+}	
+
+.columns {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 40px;
+}
+
+.left{
+flex: 1;
+}
+
+.right{
+flex: 1;
+}
+
+.right{
+width: 100%;
+height: auto;
+display: block;
+}	
+
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+#container {
+  flex: 1;
+}
+	
+} /* closes 1024px+ */
+
+
+
