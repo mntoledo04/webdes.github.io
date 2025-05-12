@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Veil of the Deep</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fauna+One&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+<figure class="logo">
+	<img src="img/logo.png" alt="Logo">
+</figure>
+
+<nav>
+    <ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="memorial.html">Memorial</a></li>
+	<li><a href="ourpast.html">Our Past</a></li>
+	<li><a href="visitus.html">Visit Us</a></li>
+    </ul>
+</nav>
+</header>
+
+
+  <div id="container">
+
+
+<main>
+
+
+<!-- <figure> is the first child of <main> -->
+
+
+
+
+<!-- <section> is the second child of <main> -->
+
+
+
+<section>
+
+<h1>Our Past</h1>
+
+<p>The true beginnings of the Deepborn are clouded in mystery, their history whispered only through broken currents and half-remembered songs. Yet fragments of truth surface from time to time — ruins beneath the waves, forgotten carvings, and the faint memories passed down in dreams. Scholars and seekers who dare to study the phenomenon have pieced together a tentative history, one that blurs the line between myth and memory.</p>
+
+<button id="facts">Continue Reading</button>
+
+
+		<p id="one">Long before the rise of modern civilization, it is said that great cities flourished at the edges of the world, perched between land and sea. Names like Thonis-Heracleion, Port Royal, and Cantre’r Gwaelod echo through historical records — bustling harbors and empires now swallowed whole by the ocean’s hunger. Some blame earthquakes, tsunamis, or the shifting of the earth’s bones. Others whisper of darker causes: that these cities were not lost by accident, but taken — drawn beneath the waves as part of a greater, older will.</p>
+
+		<p id="one">According to ancient tales, there was once a being — a sorrowful queen, a forsaken mother — who made her covenant with the sea. In her grief and rage, she offered herself to the deep, and in doing so, the ocean gave her dominion over its hidden places. It is from her blessing — or her curse — that the Deepborn were created.</p>
+
+<p id="one">Early survivors of the sunken cities found themselves changed. No longer entirely human, they were reshaped by her touch: breathing saltwater, hearing the secret languages of the currents, their dreams tangled with melodies not of this world. Over generations, these altered souls became something other. Bound to the Drowned Mother’s will, they watched the surface with longing — and a sense of duty. For it is believed that those who hear the song of the Deepborn are not chosen by accident. They are called. Drawn to the water, lured beneath, and offered to the one who first made it their home. This offering is not seen as cruelty among the Deepborn, but as a sacred returning — a way to honor their origins and ensure the balance between worlds remains.</p>
+
+<p id="one">Today, little evidence of these ancient cities remains, and what few artifacts have been recovered seem to resist study, corroding unnaturally or slipping away into private collections. Those who delve too deeply often vanish, as if pulled into the tide themselves. The Deepborn continue their vigil beneath the waves, patient and eternal, singing to the hearts of those who still listen.</p>
+
+	<figure>
+		<img src="img/statues.jfif">
+	</figure>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L4qM1IEhtNQ?si=lPP31kbulYwzZteD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</figure>
+
+</section>
+
+
+
+</main>
+
+
+  </div><!-- close "container" -->
+
+<footer>
+<p>&copy; 2025 Veil of the Deep. Mehida Toledo, ChatGPT, DeepAI.</p>
+</footer>
+
+
+
+
+  
+ <!-- Paste the jQuery starter code below here -->
+  
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+  $(document).ready(function() {
+
+$('p#one').hide(); 
+
+
+$('button#facts').click(function() {
+
+$('p#one').slideToggle(500);
+
+});//close one function
+
+
+
+
+
+$('h2').click(function(){
+
+//$('body').css({'background':'pink','color':'purple'});
+
+$('body').toggleClass('pagemagic');
+
+
+
+});//close h2 function
+
+
+  }); //close .ready()
+</script>
+
+</body>
+	
+</html> 
